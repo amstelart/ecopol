@@ -482,6 +482,9 @@ body.compensate-for-scrollbar{overflow:hidden}
   font-weight: 500;
   margin-bottom: 40px;
 }
+.page-content {
+  margin-bottom: 80px;
+}
 .card-tags {
   margin-bottom: 15px;
   display: -webkit-box;
@@ -523,10 +526,28 @@ body.compensate-for-scrollbar{overflow:hidden}
 .page-heading-title {
   font-size: 46px;
   font-weight: 900;
+  margin-bottom: 30px;
 }
 .page-section-title {
   font-size: 46px;
   font-weight: 900;
+}
+.breadcrumb a {
+  color: #AFAFAF;
+}
+.sidebar {
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+.list-docs li {
+  margin-bottom: 15px;
+}
+.list-docs a {
+  color: #000;
+  text-decoration: underline;
+}
+.list-docs a:hover, .list-docs a:focus {
+  text-decoration: none;
 }
 .page-header {
   padding-top: 55px;
@@ -594,13 +615,13 @@ body.compensate-for-scrollbar{overflow:hidden}
   margin-bottom: 30px;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-08677063533736071.png);
+  background-image: url(../img/sprite-011764913893721007.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-08677063533736071.png);
+  background-image: url(../img/sprite-011764913893721007.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -846,6 +867,9 @@ body.compensate-for-scrollbar{overflow:hidden}
           align-items: center;
 }
 @media (min-width: 1200px) {
+  .page {
+    font-size: 1.25rem;
+  }
   .subdivision-item {
     font-size: 24px;
   }
