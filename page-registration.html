@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bootstrap 4 start project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+  <link href="css/style.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+</head>
+
+<body>
+
+  <header class="page-header page-header--main">
+    <div class="container">
+      <div class="header-main">
+        <div class="header-main__inner">
+          <a class="logo" href="index.html">
+            <img class="logo__img" width="258" height="52" src="img/logo.svg" alt="">
+            <span class="logo__caption">Региональный оператор по обращению с ТКО</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><span></span></span>
+          </button>
+        </div>
+        <div class="header-main__contacts">
+          <ul class="contacts-list">
+            <li class="contacts-list__item">
+              <svg class="icon icon-phone" width="23" height="23"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-phone"></use></svg>
+              +7(4712) 25 23 12
+            </li>
+            <li class="contacts-list__item">
+              <svg class="icon icon-phone" width="23" height="23"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-phone"></use></svg>
+              +7(4713) 14-08-92
+            </li>
+          </ul>
+        </div>
+        <div class="header-main__signin">
+          <a href="page-registration.html" class="btn btn-primary btn-fw">Регистрация</a>
+          <a href="page-login.html" class="btn btn-secondary btn-fw">Войти</a>
+        </div>
+      </div>
+    </div>
+    <div class="header-nav">
+      <div class="container">
+        <nav class="navbar navbar-main navbar-expand-lg">
+          <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="navbar-nav w-100">
+              <li class="nav-item active">
+                <a class="nav-link" href="page-about.html">О компании</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Услуги</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="page-docs.html">Документы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="page-vacancy.html">Вакансии</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="page-information.html">Полезная информация</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Потребителям</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="page-contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+  <main class="page-content">
+    <div class="container">
+
+      <div class="b-entry">
+        <div class="b-entry__header">
+          <h1 class="page-heading-title">Регистрация</h1>
+          <ul class="nav nav-steps flex-column flex-sm-row" id="registrationTab" role="tablist">
+            <li class="nav-item flex-sm-fill text-sm-center">
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#step-one" role="tab" aria-controls="home" aria-selected="true">Шаг 1. Контактный данные</a>
+            </li>
+            <li class="nav-item flex-sm-fill text-sm-center">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#step-two" role="tab" aria-controls="profile" aria-selected="false">Шаг 2. Адрес проживания</a>
+            </li>
+          </ul>
+        </div>
+        <div class="b-entry__body">
+          <div class="tab-content" id="registrationTabContent">
+            <div class="tab-pane fade show active" id="step-one" role="tabpanel" aria-labelledby="step-one-tab">
+              <form action="">
+                <div class="form-group">
+                  <label>ФОИ*</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>E-mail*</label>
+                  <input type="email" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Телефон*</label>
+                  <input type="email" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Пароль*</label>
+                  <input type="password" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Повторите пароль*</label>
+                  <input type="password" class="form-control">
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-block btn-primary">Далее</button>
+                </div>
+              </form>
+              <span>* — обязательные поля</span>
+            </div>
+            <div class="tab-pane fade" id="step-two" role="tabpanel" aria-labelledby="step-two-tab">
+              <form action="">
+                <div class="form-group">
+                  <label>Номер лицевого счета*</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Район проживания*</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Населенный пункт*</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Номер дома*</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Номер квартиры</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-block btn-primary">Зарегистрироваться</button>
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Я принимаю
+                    </label>
+                    <a href="#">условия передачи информации</a>
+                  </div>
+                </div>
+              </form>
+              <span>* — обязательные поля</span>
+            </div>
+          </div>
+        </div>
+        <div class="b-entry__footer">
+          <span>Уже зарегистрированы?</span>
+          <a class="btn btn-sm btn-link" href="page-login.html">Войти</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="d-lg-flex">
+          <div class="footer-top__logo">
+            <img width="258" height="52" src="img/logo--white.svg" alt="">
+          </div>
+          <div class="flex-grow-1 mb-0 d-lg-flex justify-content-end footer-nav">
+            <div class="footer-nav__part">
+              <h4 class="footer-nav__title">Услуги</h4>
+              <ul class="nav nav-footer flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Сбор и транспортирование ТКО</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Размещение ТКО</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-nav__part">
+              <h4 class="footer-nav__title">Документы</h4>
+              <ul class="nav nav-footer flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Раскрытие информации</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Копии лицензий</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Формы Типовых договоров с потребителями услуг</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© Экопол 2018</span>
+        <span>Сделано в Showbiz</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="callModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Заказать звонок</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="feedback-form-call" action="">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Имя">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Телефон">
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-block btn-danger">Оставить заявку</button>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Я принимаю
+                </label>
+                <a href="#">условия передачи информации</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="faqModal" tabindex="-1" role="dialog" aria-labelledby="faqModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Задать вопрос</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="feedback-form-call" action="">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Имя">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Телефон">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="5" placeholder="Введите вопрос"></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-block btn-danger">Оставить заявку</button>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Я принимаю
+                </label>
+                <a href="#">условия передачи информации</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="subscribeModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Подписаться на новости</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="feedback-form-call" action="">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Имя">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="E-mail">
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-block btn-danger">Подписаться</button>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Я принимаю
+                </label>
+                <a href="#">условия передачи информации</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/svg4everybody.js"></script>
+  <script src="js/ofi.js"></script>
+  <script src="js/isMobile.min.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
