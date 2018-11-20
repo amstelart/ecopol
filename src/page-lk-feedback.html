@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bootstrap 4 start project</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  @@include('blocks/page-header/page-header.html')
+
+  <main class="page-content">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Главная</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Личный кабинет</li>
+        </ol>
+      </nav>
+
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">
+              Информация о районном подразделении
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">Информация пользователя</a>
+            <a href="#" class="list-group-item list-group-item-action active">Обратная связь с диспетчером</a>
+            <a href="#" class="list-group-item list-group-item-action">Льгов</a>
+            <a href="#" class="list-group-item list-group-item-action">Выйти</a>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="page-heading">
+            <h1 class="page-heading-title">Личный кабинет</h1>
+          </div>
+          <p class="lead">Ваше сообщение будет отправлену диспетчеру районного подразделения, а также в головной офис</p>
+          <form action="">
+            <div class="form-group">
+              <textarea class="form-control" rows="8" placeholder="Введите сообщение"></textarea>
+            </div>
+            <div class="form-group row">
+              <div class="col-lg-4 mb-3">
+                <button type="submit" class="btn btn-block btn-primary">Отправить сообщение</button>
+              </div>
+              <div class="col-lg-4 mb-3">
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="customFile">
+                  <label class="custom-file-label" for="customFile">Прикрепить файл</label>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+    </div>
+  </main>
+
+  @@include('blocks/page-footer/page-footer.html')
+  @@include('blocks/modal/modal.html')
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

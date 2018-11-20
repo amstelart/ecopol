@@ -1,0 +1,49 @@
+// В этом файле должны быть стили для БЭМ-блока navbar-main, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.navbar-main {
+
+  $block-name:                &; // #{$block-name}__element
+
+  padding-left: 0;
+  padding-right: 0;
+  border-top: 1px solid #70707029;
+  border-bottom: 1px solid #70707029;
+
+  .navbar-nav {
+    .nav-item {
+
+      margin-right: 2.5rem;
+
+      &:first-child {
+        .nav-link {
+          padding-left: 0;
+        }
+      }
+      &:last-child {
+        .nav-link {
+          padding-right: 0;
+        }
+      }
+
+      &.active {
+        .nav-link {
+          color: #64AB3C;
+        }
+      }
+    }
+
+    .nav-link {
+      font-size: 22px;
+      font-weight: 700;
+      color: #000;
+
+      &:hover,
+      &:focus {
+        color: #64AB3C;
+      }
+    }
+  }
+
+}

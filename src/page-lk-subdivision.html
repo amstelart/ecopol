@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bootstrap 4 start project</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  @@include('blocks/page-header/page-header.html')
+
+  <main class="page-content">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Главная</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Личный кабинет</li>
+        </ol>
+      </nav>
+
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active">
+              Информация о районном подразделении
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">Информация пользователя</a>
+            <a href="#" class="list-group-item list-group-item-action">Обратная связь с диспетчером</a>
+            <a href="#" class="list-group-item list-group-item-action">Льгов</a>
+            <a href="#" class="list-group-item list-group-item-action">Выйти</a>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="page-heading">
+            <h1 class="page-heading-title">Личный кабинет</h1>
+          </div>
+          <p>Вы относитесь к <b>Курчатовскому</b> районному подразделению</p>
+          <img class="img-fluid" src="img/map-placeholder.jpg" alt="">
+
+          <div class="b-map">
+
+          </div>
+
+          <h3>Адреса районых подразделений</h3>
+
+          <div class="accordion" id="accordionSubdivision">
+
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Курчатовское подразделение
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionSubdivision">
+                <div class="card-body">
+                  <img class="img-fluid" src="img/map-placeholder.jpg" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Железногорское подразделение
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSubdivision">
+                <div class="card-body">
+                  <img class="img-fluid" src="img/map-placeholder.jpg" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Льговское подразделение
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSubdivision">
+                <div class="card-body">
+                  <img class="img-fluid" src="img/map-placeholder.jpg" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Хомутовское подразделение
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionSubdivision">
+                <div class="card-body">
+                  <img class="img-fluid" src="img/map-placeholder.jpg" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="headingFive">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Дмитриевское подразделение
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionSubdivision">
+                <div class="card-body">
+                  <img class="img-fluid" src="img/map-placeholder.jpg" alt="">
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </main>
+
+  @@include('blocks/page-footer/page-footer.html')
+  @@include('blocks/modal/modal.html')
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

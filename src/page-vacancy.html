@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bootstrap 4 start project</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  @@include('blocks/page-header/page-header.html')
+
+  <main class="page-content">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Главная</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Вакансии</li>
+        </ol>
+      </nav>
+      <div class="page-heading">
+        <h1 class="page-heading-title">Вакансии</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active">
+              Железногорск
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">Курчатов</a>
+            <a href="#" class="list-group-item list-group-item-action">Дмитриев</a>
+            <a href="#" class="list-group-item list-group-item-action">Льгов</a>
+            <a href="#" class="list-group-item list-group-item-action">Курчатов</a>
+            <a href="#" class="list-group-item list-group-item-action">Дмитриев</a>
+            <a href="#" class="list-group-item list-group-item-action">Льгов</a>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="card">
+                <img class="card-img-top" src="img/card-image-01.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <div class="card-tags">
+                    <a class="btn btn-tags btn-sm" role="button" href="#">Текст</a>
+                    <a class="btn btn-tags btn-sm" role="button" href="#">Репортаж</a>
+                  </div>
+                  <h5 class="card-title">Статья о компании в газете "Город46"</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="card">
+                <img class="card-img-top" src="img/card-image-02.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <div class="card-tags">
+                    <a class="btn btn-tags btn-sm" role="button" href="#">Видео</a>
+                    <a class="btn btn-tags btn-sm" role="button" href="#">Интервью</a>
+                  </div>
+                  <h5 class="card-title">Репортаж 1-го канала</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="card">
+                <img class="card-img-top" src="img/card-image-03.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <div class="card-tags">
+                    <a class="btn btn-tags btn-sm" role="button" href="#">Текст</a>
+                    <a class="btn btn-tags btn-sm" role="button" href="#">Репортаж</a>
+                  </div>
+                  <h5 class="card-title">Интервью с коллективом</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="card">
+                <img class="card-img-top" src="img/card-image-01.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <div class="card-tags">
+                    <a class="btn btn-tags btn-sm" role="button" href="#">Текст</a>
+                    <a class="btn btn-tags btn-sm" role="button" href="#">Репортаж</a>
+                  </div>
+                  <h5 class="card-title">Статья о компании в газете "Город46"</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </main>
+
+  @@include('blocks/page-footer/page-footer.html')
+  @@include('blocks/modal/modal.html')
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>
