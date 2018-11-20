@@ -532,12 +532,42 @@ body.compensate-for-scrollbar{overflow:hidden}
   font-size: 46px;
   font-weight: 900;
 }
+.breadcrumb {
+  margin-top: 1rem;
+}
 .breadcrumb a {
   color: #AFAFAF;
 }
 .sidebar {
   margin-right: 40px;
   margin-bottom: 20px;
+}
+.sidebar-menu-spacer {
+  min-height: 380px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.gis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.gis-icon {
+  margin-right: 10px;
+}
+.gis-caption-title {
+  display: block;
+  font-size: 32px;
+  line-height: 32px;
+}
+.gis-caption-text {
+  display: block;
+  font-size: 18px;
+  line-height: 18px;
 }
 .list-docs li {
   margin-bottom: 15px;
@@ -615,13 +645,13 @@ body.compensate-for-scrollbar{overflow:hidden}
   margin-bottom: 30px;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-011764913893721007.png);
+  background-image: url(../img/sprite-08656171897325429.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-011764913893721007.png);
+  background-image: url(../img/sprite-08656171897325429.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
