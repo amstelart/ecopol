@@ -22,25 +22,36 @@
       </nav>
 
       <div class="row">
-        <div class="col-lg-3">
-          <div class="list-group">
-            <a href="#" class="list-group-item list-group-item-action">
-              Информация о районном подразделении
-            </a>
-            <a href="#" class="list-group-item list-group-item-action active">Информация пользователя</a>
-            <a href="#" class="list-group-item list-group-item-action">Обратная связь с диспетчером</a>
-            <a href="#" class="list-group-item list-group-item-action">Льгов</a>
-            <a href="#" class="list-group-item list-group-item-action">Выйти</a>
+        <div class="col-xl-3">
+          <div class="sidebar">
+            <div class="list-group sidebar-menu">
+              <a href="page-lk-subdivision.html" class="list-group-item list-group-item-action">
+                Информация о районном подразделении
+              </a>
+              <a href="page-lk-info.html" class="list-group-item list-group-item-action active">Информация пользователя</a>
+              <a href="page-lk-feedback.html" class="list-group-item list-group-item-action">Обратная связь с диспетчером</a>
+              <div class="sidebar-menu-spacer"></div>
+              <a href="#" class="list-group-item list-group-item-action">
+                <div class="gis">
+                  <img class="gis-icon" src="img/logo-icon.png" alt="">
+                  <div class="gis-caption">
+                    <span class="gis-caption-title">ГИС ЖКЖ</span>
+                    <span class="gis-caption-text">Оплата услуг</span>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="list-group-item text-center list-group-item-action">Выйти</a>
+            </div>
           </div>
         </div>
-        <div class="col-lg-9">
+        <div class="col-xl-9">
           <div class="page-heading">
             <h1 class="page-heading-title">Личный кабинет</h1>
           </div>
-          <div class="row">
-            <div class="col-lg-4">
-              <h4>Контактные данные</h4>
-              <form action="">
+          <form class="form" action="">
+            <div class="row">
+              <div class="col-lg-6 col-xl-4 mr-xl-4">
+                <h4>Контактные данные</h4>
                 <div class="form-group">
                   <label>ФОИ*</label>
                   <input type="text" class="form-control">
@@ -61,25 +72,30 @@
                   <label>Повторите пароль*</label>
                   <input type="password" class="form-control">
                 </div>
-                <div class="form-group">
-                  <button type="submit" class="btn btn-block btn-primary">Сохранить</button>
-                </div>
-              </form>
-            </div>
-            <div class="col-lg-4">
-              <h4>Адрес проживания</h4>
-              <form action="">
+              </div>
+              <div class="col-lg-6 col-xl-4">
+                <h4>Адрес проживания</h4>
                 <div class="form-group">
                   <label>Номер лицевого счета*</label>
                   <input type="text" class="form-control">
                 </div>
                 <div class="form-group">
                   <label>Район проживания*</label>
-                  <input type="text" class="form-control">
+                  <select class="custom-select">
+                    <option selected>Выбрать...</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
                 </div>
                 <div class="form-group">
                   <label>Населенный пункт*</label>
-                  <input type="text" class="form-control">
+                  <select class="custom-select">
+                    <option selected>Выбрать...</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
                 </div>
                 <div class="form-group">
                   <label>Номер дома*</label>
@@ -89,10 +105,16 @@
                   <label>Номер квартиры</label>
                   <input type="text" class="form-control">
                 </div>
-              </form>
+              </div>
             </div>
-            <div class="col-lg-4"></div>
-          </div>
+            <div class="row">
+              <div class="col-lg-6 col-xl-4">
+                <div class="form-group">
+                  <button type="submit" class="btn btn-block btn-primary">Сохранить</button>
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
 

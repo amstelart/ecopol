@@ -30,6 +30,12 @@ $jumbotron-bg:  #F6F6F6;
 
 $font-family-base: 'Roboto', Arial, sans-serif;
 
+$font-size-base:       1rem;
+$lead-font-size:       ($font-size-base * 1.9);
+$lead-font-weight:     400;
+
+$headings-font-weight: 400;
+
 // font-family: 'Roboto', sans-serif;
 // font-family: 'Roboto Condensed', sans-serif;
 
@@ -51,6 +57,7 @@ $line-height-base:            1.5 !default;
 
 $input-btn-padding-y:         .75rem;
 $input-btn-padding-x:         1rem;
+
 $input-bg:                    #EBEBEB;
 $input-color:                 #000;
 $input-border-color:          #EBEBEB;
@@ -130,4 +137,19 @@ $breadcrumb-margin-bottom:          1rem !default;
 
 .btn-fw {
   min-width: 276px;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  &--small {
+    @media (min-width: 1200px) {
+      max-width: 1425px;
+    }
+  }
+}
+
+.text-muted {
+  color: #9F9F9F;
 }

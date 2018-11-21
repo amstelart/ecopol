@@ -12,9 +12,39 @@
   border-bottom: 1px solid #70707029;
 
   .navbar-nav {
+
+    justify-content: space-between;
+
     .nav-item {
 
-      margin-right: 2.5rem;
+      @include media-breakpoint-up(xl) {
+        margin-right: 1.5rem;
+      }
+
+      .dropdown-toggle {
+        &:after {
+          content: "";
+          display: inline-block;
+          width: 12px;
+          height: 12px;
+          margin-left: 0;
+          vertical-align: 0.2rem;
+          border-top: 0;
+          border-right: 0;
+          border-bottom: 2px solid #64AB3C;
+          border-left: 2px solid #64AB3C;
+          transform: rotate(-45deg);
+          margin-left: 8px;
+        }
+      }
+
+      // &.show {
+      //   .dropdown-toggle {
+      //     &:after {
+      //       transform: rotate(-45deg);
+      //     }
+      //   }
+      // }
 
       &:first-child {
         .nav-link {
@@ -35,9 +65,13 @@
     }
 
     .nav-link {
-      font-size: 22px;
+      font-size: 16px;
       font-weight: 700;
       color: #000;
+
+      @include media-breakpoint-up(xl) {
+        font-size: 20px;
+      }
 
       &:hover,
       &:focus {
