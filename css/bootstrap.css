@@ -7557,7 +7557,9 @@ a.text-dark:hover, a.text-dark:focus {
   .text-xl-right {
     text-align: right !important; }
   .text-xl-center {
-    text-align: center !important; } }
+    text-align: center !important; }
+    .container--small {
+      max-width: 1425px; } }
 
 @media (max-width: 575.98px) {
   .table-responsive-sm {
