@@ -741,6 +741,14 @@ body.compensate-for-scrollbar{overflow:hidden}
   display: -ms-flexbox;
   display: flex;
 }
+.header-main__signin .logged-user a {
+  color: #000;
+  font-weight: 500;
+  text-decoration: underline;
+}
+.header-main__signin .logged-user a:hover, .header-main__signin .logged-user a:focus {
+  text-decoration: none;
+}
 .header-main__signin .btn {
   margin-left: 15px;
 }
@@ -795,13 +803,13 @@ body.compensate-for-scrollbar{overflow:hidden}
   font-size: 14px;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-09479794147599139.png);
+  background-image: url(../img/sprite-013752569941957282.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-09479794147599139.png);
+  background-image: url(../img/sprite-013752569941957282.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -1268,9 +1276,6 @@ body.compensate-for-scrollbar{overflow:hidden}
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     max-width: 100%;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
     margin-top: 20px;
   }
   .header-main__signin .btn {
@@ -1290,5 +1295,3 @@ body.compensate-for-scrollbar{overflow:hidden}
     min-width: inherit;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
