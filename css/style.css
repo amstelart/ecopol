@@ -313,10 +313,23 @@ body.compensate-for-scrollbar{overflow:hidden}
 .section-slider {
   margin-bottom: 15px;
 }
+#main-slider .carousel-item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.65)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+  z-index: 1;
+}
 #main-slider .carousel-caption {
   text-align: left;
   left: 8%;
   right: 8%;
+  z-index: 3;
+  bottom: 10%;
 }
 #main-slider .carousel-caption-title {
   font-size: 28px;
@@ -549,6 +562,35 @@ body.compensate-for-scrollbar{overflow:hidden}
 .card-tags-filter .btn-tags:not(:last-child) {
   margin-right: 10px;
 }
+.card-img-top,
+.card-img {
+  border-radius: 6px;
+}
+.card-img-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.card-img-overlay:before {
+  content: "";
+  position: absolute;
+  border-radius: 6px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.65)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+  z-index: 1;
+}
+.card-img-overlay .card-title {
+  z-index: 2;
+  position: relative;
+  color: #fff;
+}
 .nav-steps .nav-link {
   border-bottom: 1px solid #B8B8B8;
   color: #B8B8B8;
@@ -726,6 +768,7 @@ body.compensate-for-scrollbar{overflow:hidden}
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-size: 14px;
 }
 .footer-nav {
   margin-right: 0;
@@ -752,13 +795,13 @@ body.compensate-for-scrollbar{overflow:hidden}
   font-size: 14px;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-044479371855809124.png);
+  background-image: url(../img/sprite-09479794147599139.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-044479371855809124.png);
+  background-image: url(../img/sprite-09479794147599139.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -1124,6 +1167,7 @@ body.compensate-for-scrollbar{overflow:hidden}
   }
   .footer-bottom {
     padding: 35px 0;
+    font-size: 1rem;
   }
   .footer-nav {
     -webkit-box-pack: end;
@@ -1246,3 +1290,5 @@ body.compensate-for-scrollbar{overflow:hidden}
     min-width: inherit;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
