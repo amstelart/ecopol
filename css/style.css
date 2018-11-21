@@ -803,13 +803,13 @@ body.compensate-for-scrollbar{overflow:hidden}
   font-size: 14px;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-013752569941957282.png);
+  background-image: url(../img/sprite-09873346195558939.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-013752569941957282.png);
+  background-image: url(../img/sprite-09873346195558939.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -958,6 +958,21 @@ body.compensate-for-scrollbar{overflow:hidden}
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.navbar-main .navbar-nav .nav-item .dropdown-toggle:after {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 0;
+  vertical-align: 0.2rem;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 2px solid #64AB3C;
+  border-left: 2px solid #64AB3C;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin-left: 8px;
 }
 .navbar-main .navbar-nav .nav-item:first-child .nav-link {
   padding-left: 0;
