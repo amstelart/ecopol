@@ -5209,6 +5209,9 @@ a.text-dark:hover, a.text-dark:focus {
   padding-left: 15px;
   padding-right: 15px; }
 
+.text-muted {
+  color: #9F9F9F; }
+
 @media print {
   *,
   *::before,
