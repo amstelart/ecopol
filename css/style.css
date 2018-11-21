@@ -304,7 +304,7 @@ body.compensate-for-scrollbar{overflow:hidden}
   max-width: 235px;
   display: inline-block;
   vertical-align: middle;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 22px;
 }
 .logo:hover, .logo:focus {
@@ -312,6 +312,30 @@ body.compensate-for-scrollbar{overflow:hidden}
 }
 .section-slider {
   margin-bottom: 15px;
+}
+#main-slider .carousel-caption {
+  text-align: left;
+  left: 8%;
+  right: 8%;
+}
+#main-slider .carousel-caption-title {
+  font-size: 48px;
+  font-weight: 700;
+}
+#main-slider .carousel-caption-text {
+  font-size: 16px;
+  color: #ffffffb3;
+}
+#main-slider .carousel-control-prev,
+#main-slider .carousel-control-next {
+  opacity: 1;
+  width: 7%;
+}
+#main-slider .carousel-control-prev .icon,
+#main-slider .carousel-control-next .icon {
+  width: 40px;
+  height: 40px;
+  fill: #fff;
 }
 .badge--section {
   color: #C84949;
@@ -435,9 +459,14 @@ body.compensate-for-scrollbar{overflow:hidden}
   font-size: 16px;
 }
 .contacts-list__item {
-  display: inline-block;
+  display: block;
   margin-right: 10px;
   white-space: nowrap;
+  margin-bottom: 8px;
+}
+.contacts-list__item .icon {
+  fill: #64AB3C;
+  margin-right: 6px;
 }
 .section-main__header {
   display: -webkit-box;
@@ -499,7 +528,7 @@ body.compensate-for-scrollbar{overflow:hidden}
   margin-right: 10px;
 }
 .card-tags-filter {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -513,6 +542,7 @@ body.compensate-for-scrollbar{overflow:hidden}
   min-width: 144px;
   -ms-flex-preferred-size: 144px;
       flex-basis: 144px;
+  margin-bottom: 10px;
 }
 .card-tags-filter .btn-tags:not(:last-child) {
   margin-right: 10px;
@@ -526,7 +556,7 @@ body.compensate-for-scrollbar{overflow:hidden}
   color: #64AB3C;
 }
 .page-heading-title {
-  font-size: 46px;
+  font-size: 32px;
   font-weight: 900;
   margin-bottom: 30px;
 }
@@ -541,7 +571,6 @@ body.compensate-for-scrollbar{overflow:hidden}
   color: #AFAFAF;
 }
 .sidebar {
-  margin-right: 40px;
   margin-bottom: 20px;
 }
 .sidebar-menu-spacer {
@@ -590,9 +619,9 @@ body.compensate-for-scrollbar{overflow:hidden}
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -605,6 +634,19 @@ body.compensate-for-scrollbar{overflow:hidden}
   margin-right: 30px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+.header-main__inner {
+  margin-bottom: 20px;
+}
+.header-main__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.header-main__contacts .contacts-list {
+  margin-right: 20px;
 }
 .header-main__signin {
   display: -webkit-box;
@@ -620,7 +662,11 @@ body.compensate-for-scrollbar{overflow:hidden}
   padding-top: 40px;
 }
 .footer-top {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+}
+.footer-top__logo {
+  margin-bottom: 20px;
+  margin-right: 30px;
 }
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -632,11 +678,6 @@ body.compensate-for-scrollbar{overflow:hidden}
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.nav-footer .nav-link {
-  padding-left: 0;
-  color: #ffffffb3;
-  font-size: 14px;
-}
 .footer-nav {
   margin-right: 0;
   -webkit-box-flex: 1;
@@ -645,23 +686,30 @@ body.compensate-for-scrollbar{overflow:hidden}
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .footer-nav__part {
-  margin-left: 30px;
+  margin-bottom: 15px;
 }
 .footer-nav__title {
   font-weight: 700;
   font-size: 22px;
   margin-bottom: 10px;
 }
+.footer-nav__list .nav-link {
+  padding-left: 0;
+  color: #ffffffb3;
+  font-size: 14px;
+}
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-06932745436606746.png);
+  background-image: url(../img/sprite-0896764482047133.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-06932745436606746.png);
+  background-image: url(../img/sprite-0896764482047133.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -954,9 +1002,6 @@ body.compensate-for-scrollbar{overflow:hidden}
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  .contacts-list {
-    font-size: 22px;
-  }
   .contacts-list__item {
     margin-right: 20px;
   }
@@ -979,6 +1024,12 @@ body.compensate-for-scrollbar{overflow:hidden}
     font-size: 36px;
     margin-bottom: 40px;
   }
+  .page-heading-title {
+    font-size: 46px;
+  }
+  .sidebar {
+    margin-right: 40px;
+  }
   .page-header {
     padding-top: 55px;
   }
@@ -991,30 +1042,60 @@ body.compensate-for-scrollbar{overflow:hidden}
   .footer-top {
     margin-bottom: 100px;
   }
+  .footer-top__logo {
+    margin-bottom: 0;
+  }
   .footer-bottom {
     padding: 35px 0;
   }
-  .nav-footer .nav-link {
-    font-size: 18px;
-  }
   .footer-nav {
-    margin-right: 110px;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
   .footer-nav__part {
-    margin-left: 150px;
+    margin-right: 60px;
+    margin-bottom: 0;
   }
   .footer-nav__title {
     font-size: 38px;
     margin-bottom: 30px;
+  }
+  .footer-nav__list .nav-link {
+    font-size: 18px;
   }
   .navbar-main .navbar-nav .nav-item {
     margin-right: 1.5rem;
   }
   .navbar-main .navbar-nav .nav-link {
     font-size: 22px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .header-main__signin {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    max-width: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-top: 20px;
+  }
+  .header-main__signin .btn {
+    margin-left: 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    padding: 0.35rem 0.6rem;
+    font-size: 14px;
+  }
+  .header-main__signin .btn:first-child {
+    margin-right: 10px;
+  }
+  .header-main__signin .btn.btn-fw {
+    min-width: inherit;
   }
 }
 
