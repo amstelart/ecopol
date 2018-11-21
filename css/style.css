@@ -692,7 +692,7 @@ p {
 .accordion .card-header .btn .icon-arrow {
   position: absolute;
   right: 5px;
-  top: 1rem;
+  top: 0.6rem;
 }
 .form-group label {
   font-size: 18px;
@@ -808,13 +808,13 @@ p {
   font-size: 14px;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-03920698880236271.png);
+  background-image: url(../img/sprite-04160192967972596.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-03920698880236271.png);
+  background-image: url(../img/sprite-04160192967972596.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -1298,6 +1298,11 @@ p {
     height: 37px;
     font-size: 14px;
   }
+  .custom-select {
+    padding: 0.45rem 1.4rem 0.45rem 0.7rem;
+    height: 37px;
+    font-size: 14px;
+  }
   .header-main__signin {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -1341,5 +1346,3 @@ p {
     padding: 0;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
