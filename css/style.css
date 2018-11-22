@@ -504,6 +504,13 @@ p {
   height: 35px;
   margin-right: 8px;
 }
+.section-contacts__list--sm li {
+  font-size: 22px;
+}
+.section-contacts__list--sm li .icon {
+  width: 26px;
+  height: 26px;
+}
 .section-contacts__map {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -861,13 +868,13 @@ p {
   font-size: 14px;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-007591470872242745.png);
+  background-image: url(../img/sprite-09192928920348955.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-007591470872242745.png);
+  background-image: url(../img/sprite-09192928920348955.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
