@@ -495,21 +495,14 @@ p {
   margin: 0;
 }
 .section-contacts__list li {
-  font-size: 28px;
+  font-size: 22px;
   margin-bottom: 20px;
 }
 .section-contacts__list li .icon {
   fill: #64AB3C;
-  width: 35px;
-  height: 35px;
-  margin-right: 8px;
-}
-.section-contacts__list--sm li {
-  font-size: 22px;
-}
-.section-contacts__list--sm li .icon {
   width: 26px;
   height: 26px;
+  margin-right: 8px;
 }
 .section-contacts__map {
   -ms-flex-preferred-size: 100%;
@@ -868,13 +861,13 @@ p {
   font-size: 14px;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-09192928920348955.png);
+  background-image: url(../img/sprite-030424969955518044.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-09192928920348955.png);
+  background-image: url(../img/sprite-030424969955518044.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
