@@ -422,7 +422,7 @@ p {
   margin-bottom: 24px;
 }
 .b-rate-caption-text {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 32px;
 }
 .b-lk {
@@ -698,6 +698,19 @@ p {
   font-size: 18px;
   font-weight: 500;
 }
+.list-group-item:first-child {
+  border-radius: 0;
+}
+.list-group-item:last-child {
+  border-radius: 0;
+}
+.custom-file-label:after {
+  content: "Выбрать";
+  border-left: 1px solid  #fff;
+}
+.lead {
+  font-size: 1.2rem;
+}
 .page-header {
   padding-top: 20px;
 }
@@ -757,9 +770,6 @@ p {
 .header-main__signin .btn {
   margin-left: 15px;
 }
-.lead {
-  font-size: 1.3rem;
-}
 .page-footer {
   background: #6D953F;
   color: #fff;
@@ -808,13 +818,13 @@ p {
   font-size: 14px;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-04160192967972596.png);
+  background-image: url(../img/sprite-006846813049529099.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-04160192967972596.png);
+  background-image: url(../img/sprite-006846813049529099.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -958,11 +968,6 @@ p {
   padding-right: 0;
   border-top: 1px solid #70707029;
   border-bottom: 1px solid #70707029;
-}
-.navbar-main .navbar-nav {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 .navbar-main .navbar-nav .nav-item .dropdown-toggle:after {
   content: "";
@@ -1108,8 +1113,9 @@ p {
     font-size: 48px;
   }
   .b-rate-caption-text {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 42px;
+    max-width: 560px;
   }
   .b-lk {
     padding-left: 9rem;
@@ -1118,7 +1124,7 @@ p {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     max-width: 50%;
-    font-size: 38px;
+    font-size: 32px;
     line-height: 48px;
     margin-bottom: 0;
   }
@@ -1167,7 +1173,7 @@ p {
     margin-right: 40px;
   }
   .sidebar-menu-spacer {
-    min-height: 380px;
+    min-height: 360px;
   }
   .accordion-title {
     font-size: 38px;
@@ -1222,16 +1228,16 @@ p {
 }
 @media (min-width: 992px) {
   .subdivision-item {
-    font-size: 24px;
+    font-size: 22px;
+  }
+  .lead {
+    font-size: 1.4rem;
   }
   .header-main__inner .navbar-toggler {
     display: none;
   }
   .header-main__inner {
     padding-right: 0;
-  }
-  .lead {
-    font-size: 1.9rem;
   }
 }
 @media (max-width: 767.98px) {
@@ -1245,10 +1251,6 @@ p {
   .b-rate-caption-title {
     font-size: 18px;
     margin-bottom: 1rem;
-  }
-  .b-rate-caption-text {
-    font-size: 16px;
-    line-height: 1.6;
   }
   .b-lk__title {
     font-size: 16px;
