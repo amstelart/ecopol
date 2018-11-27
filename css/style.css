@@ -301,6 +301,8 @@ p {
 }
 .logo__img {
   margin-right: 25px;
+  max-width: 100%;
+  height: auto;
 }
 .logo__caption {
   color: #787878;
@@ -881,13 +883,13 @@ p {
   font-size: 14px;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-021841961979658353.png);
+  background-image: url(../img/sprite-04725773105537028.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-021841961979658353.png);
+  background-image: url(../img/sprite-04725773105537028.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
