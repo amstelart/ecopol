@@ -13,9 +13,17 @@
 
   .navbar-nav {
 
-    justify-content: space-between;
-
     .nav-item {
+
+      &.dropdown {
+        .dropdown-item {
+          &:hover,
+          &:focus {
+            background: #64AB3C;
+            color: #fff;
+          }
+        }
+      }
 
       @include media-breakpoint-up(xl) {
         margin-right: 1.5rem;

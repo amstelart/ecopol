@@ -141,7 +141,7 @@ p {
   margin-bottom: 25px;
 
   @include media-breakpoint-up(lg) {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   &:hover,
@@ -236,17 +236,13 @@ p {
 }
 
 .b-rate-caption-text {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 32px;
 
-  @include media-breakpoint-down(sm) {
-    font-size: 16px;
-    line-height: 1.6;
-  }
-
   @include media-breakpoint-up(xl) {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 42px;
+    max-width: 560px;
   }
 }
 
@@ -275,7 +271,7 @@ p {
     @include media-breakpoint-up(xl) {
       flex-basis: 50%;
       max-width: 50%;
-      font-size: 38px;
+      font-size: 32px;
       line-height: 48px;
       margin-bottom: 0;
     }
@@ -322,6 +318,99 @@ p {
       }
     }
   }
+}
+
+.section-contacts {
+
+
+  &__inner {
+    position: relative;
+    @include media-breakpoint-up(xl) {
+      min-height: 554px;
+      background: #fdfbf3;
+    }
+  }
+
+  &__info {
+    // background: #fff;
+    padding: 45px 50px;
+    position: absolute;
+    // margin: 20px;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+    // box-shadow: 0px 0px 2px 5px rgba(255,255,255,0.32);
+    border-radius: 6px;
+    overflow: hidden;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.97);
+    }
+
+    @include media-breakpoint-up(xl) {
+
+    }
+
+    @include media-breakpoint-down(sm) {
+
+    }
+  }
+
+  &__info-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__title {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 32px;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      font-size: 22px;
+      margin-bottom: 20px;
+
+      @include media-breakpoint-down(lg) {
+        font-size: 16px;
+        margin-bottom: 8px;
+      }
+
+      .icon {
+        fill: #64AB3C;
+        width: 26px;
+        height: 26px;
+        margin-right: 8px;
+
+        @include media-breakpoint-down(lg) {
+          width: 18px;
+          height: 18px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  &__map {}
+
 }
 
 .contacts-list {
@@ -515,6 +604,13 @@ p {
   }
 }
 
+.card-text {
+  @include media-breakpoint-down(lg) {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
 // registrationTab
 
 .nav-steps {
@@ -587,7 +683,7 @@ p {
   border: 1px solid rgba(0, 0, 0, 0.125);
 
   @include media-breakpoint-up(xl) {
-    min-height: 380px;
+    min-height: 360px;
   }
 }
 
@@ -673,7 +769,7 @@ p {
       .icon-arrow {
         position: absolute;
         right: 5px;
-        top: 1rem;
+        top: 0.6rem;
 
         @include media-breakpoint-up(xl) {
           top: 1.4rem;
@@ -684,8 +780,74 @@ p {
 }
 
 .form-group {
+
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 0.7rem;
+  }
+
   label {
     font-size: 18px;
     font-weight: 500;
+    @include media-breakpoint-down(lg) {
+      font-size: 14px;
+      margin-bottom: 0.2rem;
+    }
+  }
+}
+
+.form-control {
+  @include media-breakpoint-down(lg) {
+    padding: 0.45rem 0.7rem;
+    height: 37px;
+    font-size: 14px;
+  }
+}
+
+.custom-select {
+  @include media-breakpoint-down(lg) {
+    padding: 0.45rem 1.4rem 0.45rem 0.7rem;
+    height: 37px;
+    font-size: 14px;
+  }
+}
+
+.list-group-item:first-child {
+  border-radius: 0;
+}
+.list-group-item:last-child {
+  border-radius: 0;
+}
+
+.custom-file-label {
+  &:after {
+    content: "Выбрать";
+    border-left: 1px solid  #fff;
+  }
+}
+
+.custom-checkbox {
+  @include media-breakpoint-down(lg) {
+    font-size: 14px;
+
+    .custom-control-label {
+      margin-bottom: 0;
+
+      &:before,
+      &:after {
+        top: 0.1rem;
+      }
+    }
+  }
+}
+
+.custom-checkbox .custom-control-label {
+  font-weight: 400;
+}
+
+.lead {
+  font-size: 1.2rem;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 1.4rem;
   }
 }

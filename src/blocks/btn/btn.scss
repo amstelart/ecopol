@@ -6,6 +6,11 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  @include media-breakpoint-down(lg) {
+    padding: 0.45rem 0.7rem;
+    font-size: 14px;
+  }
+
 }
 
 .btn-secondary {
